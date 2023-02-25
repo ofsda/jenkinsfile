@@ -16,8 +16,7 @@ pipeline {
             steps {
                 // parametersを定義している場合、${params.xxx}で参照可能
                 git branch: "${params.branch}",
-                url: "${params.url}",
-                credentialsId: 'github-osw'
+                url: "${params.url}"
             }
         }
 

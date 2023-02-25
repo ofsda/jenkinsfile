@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     parameters {
-        string (name: 'branch', defaultValue: 'test')
+        string (name: 'branch', defaultValue: 'tmp')
         string (name: 'url',    defaultValue: 'https://github.com/ofsda/gosample')
     }
 
