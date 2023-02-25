@@ -25,7 +25,7 @@ pipeline {
         stage('test') {
             // ステージごとに実施する処理をsteps内に定義。stepsは1つだけ
             steps {
-                sh "/usr/local/go/bin/go test ./..."
+                sh "go test ./..."
             }
         }
     }
